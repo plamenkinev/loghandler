@@ -82,7 +82,7 @@ free_space() {
 		elif [ $LOG_ROTATED -eq 0 ]; then
 			rotate_log $DIR
 		else
-			mailx -s "No more coca, baby" $NOTIFY_EMAILS
+			mailx -s "No more logs to remove or rotate!" $NOTIFY_EMAILS
 			exit 100
 		fi
 	done	
